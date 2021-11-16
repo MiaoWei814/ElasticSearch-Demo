@@ -12,15 +12,15 @@ import javax.servlet.http.HttpServletRequest;
  * @author: MiaoWei
  * @create: 2021-11-13 08:11
  **/
-@RestController
+@Controller
 public class IndexController {
 
-//    @GetMapping({"/","/index"})
-//    public String index(){
-//        return "index";
-//    }
+    @GetMapping({"/","/index"})
+    public String index(){
+        return "index";
+    }
 
-    @GetMapping({"/"})
+    @GetMapping({"/getIP"})
     public void ip(HttpServletRequest request){
         String ipAddress = IpUtils.getRemoteAddr(request);
         System.out.println("getRemoteAddr = " + ipAddress);
