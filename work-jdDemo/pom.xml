@@ -36,6 +36,23 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.78</version>
         </dependency>
+        <!-- 爬虫相关Jar包依赖 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.10-FINAL</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kie.modules</groupId>
+            <artifactId>org-apache-commons-httpclient</artifactId>
+            <version>6.2.0.CR2</version>
+            <type>pom</type>
+        </dependency>
         <!--解析网页-->
         <dependency>
             <groupId>org.jsoup</groupId>
@@ -56,6 +73,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.6.0</version>
         </dependency>
     </dependencies>
 
